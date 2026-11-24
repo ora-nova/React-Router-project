@@ -1,5 +1,5 @@
 import {NavLink, useSearchParams } from 'react-router'
-import products from './data/product'
+import products from '../data/product.js';
 
 export default function ProductList(){
     const [searchParams, setSearchParams]=useSearchParams();
@@ -17,7 +17,7 @@ export default function ProductList(){
                 </li>
             )
         }
-<button onClick={()=>setSearchParams({category: category})}>{category}</button>
+<button onClick={()=>setSearchParams({category: "electronics"})}>electronics</button>
 <button onClick={()=>setSearchParams({})}>All</button>
         </>
     )

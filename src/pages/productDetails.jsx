@@ -1,5 +1,5 @@
 import {useParams, useNavigate} from 'react-router'
-import products from './data/product'
+import products from "../data/product.js";
 export default function Details(){
 
     const {id}= useParams();
